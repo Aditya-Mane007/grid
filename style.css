@@ -1,0 +1,114 @@
+.container {
+  min-width: 90vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridDiv {
+  position: relative;
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  align-items: center;
+}
+
+.gridDiv .card {
+  width: auto;
+  height: 6rem;
+  background-color: #212121;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+}
+
+.gridDiv .card p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.card1,
+.card3 {
+  text-align: start;
+}
+
+.card2,
+.card4 {
+  text-align: end;
+}
+
+.gridDiv .circle {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.gridDiv .circle .image {
+  width: 98px;
+  height: 97px;
+  /* background-color: red; */
+}
+
+.image1 {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  border-bottom-right-radius: 10px;
+  background-color: red;
+  background-image: url("./images/FianceIcon.svg");
+  background-repeat: no-repeat;
+  background-size: 55px;
+  height: 60px;
+  background-position: right 5px bottom 5px;
+}
+
+.image2 {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  background-color: green;
+  border-bottom-left-radius: 10px;
+  background-image: url("./images/InterestRateIcon.svg");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  height: 60px;
+  background-position: left 5px bottom 4px;
+}
+
+.image3 {
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  background-color: blue;
+  border-top-right-radius: 10px;
+  background-image: url("./images/LoanIcon.svg");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  height: 60px;
+  background-position: right 5px top 5px;
+}
+
+.image4 {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  background-color: violet;
+  border-top-left-radius: 10px;
+  background-image: url("./images/TaxBenifitIcon.svg");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  height: 60px;
+  background-position: left 5px top 5px;
+}
